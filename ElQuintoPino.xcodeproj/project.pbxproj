@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543B3F8A1AA913870009F693 /* VC_BonsaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B3F891AA913870009F693 /* VC_BonsaiViewController.swift */; };
+		543B3F8C1AA918CE0009F693 /* VC_DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B3F8B1AA918CE0009F693 /* VC_DetailView.swift */; };
 		54A282A01AA4D78E0060DA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A2829F1AA4D78E0060DA60 /* AppDelegate.swift */; };
 		54A282A21AA4D78E0060DA60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A282A11AA4D78E0060DA60 /* ViewController.swift */; };
 		54A282A51AA4D78E0060DA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A282A31AA4D78E0060DA60 /* Main.storyboard */; };
 		54A282A71AA4D78E0060DA60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A282A61AA4D78E0060DA60 /* Images.xcassets */; };
 		54A282AA1AA4D78E0060DA60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54A282A81AA4D78E0060DA60 /* LaunchScreen.xib */; };
 		54A282B61AA4D78E0060DA60 /* ElQuintoPinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A282B51AA4D78E0060DA60 /* ElQuintoPinoTests.swift */; };
+		54D202091AA6277F005884EC /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D202081AA6277F005884EC /* default.png */; };
+		54D2020B1AA6416C005884EC /* CBonsai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D2020A1AA6416C005884EC /* CBonsai.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		543B3F891AA913870009F693 /* VC_BonsaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_BonsaiViewController.swift; sourceTree = "<group>"; };
+		543B3F8B1AA918CE0009F693 /* VC_DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VC_DetailView.swift; path = ../VC_DetailView.swift; sourceTree = "<group>"; };
 		54A2829A1AA4D78E0060DA60 /* ElQuintoPino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElQuintoPino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A2829E1AA4D78E0060DA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54A2829F1AA4D78E0060DA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		54A282AF1AA4D78E0060DA60 /* ElQuintoPinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElQuintoPinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A282B41AA4D78E0060DA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54A282B51AA4D78E0060DA60 /* ElQuintoPinoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElQuintoPinoTests.swift; sourceTree = "<group>"; };
+		54D202081AA6277F005884EC /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		54D2020A1AA6416C005884EC /* CBonsai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBonsai.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		54A2829C1AA4D78E0060DA60 /* ElQuintoPino */ = {
 			isa = PBXGroup;
 			children = (
+				54D2020A1AA6416C005884EC /* CBonsai.swift */,
+				543B3F8B1AA918CE0009F693 /* VC_DetailView.swift */,
+				543B3F891AA913870009F693 /* VC_BonsaiViewController.swift */,
 				54A2829F1AA4D78E0060DA60 /* AppDelegate.swift */,
 				54A282A11AA4D78E0060DA60 /* ViewController.swift */,
 				54A282A31AA4D78E0060DA60 /* Main.storyboard */,
@@ -90,6 +101,7 @@
 		54A2829D1AA4D78E0060DA60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54D202081AA6277F005884EC /* default.png */,
 				54A2829E1AA4D78E0060DA60 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +207,7 @@
 				54A282A51AA4D78E0060DA60 /* Main.storyboard in Resources */,
 				54A282AA1AA4D78E0060DA60 /* LaunchScreen.xib in Resources */,
 				54A282A71AA4D78E0060DA60 /* Images.xcassets in Resources */,
+				54D202091AA6277F005884EC /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D2020B1AA6416C005884EC /* CBonsai.swift in Sources */,
+				543B3F8C1AA918CE0009F693 /* VC_DetailView.swift in Sources */,
 				54A282A21AA4D78E0060DA60 /* ViewController.swift in Sources */,
 				54A282A01AA4D78E0060DA60 /* AppDelegate.swift in Sources */,
+				543B3F8A1AA913870009F693 /* VC_BonsaiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,7 @@
 				54A282BB1AA4D78E0060DA60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54A282BC1AA4D78E0060DA60 /* Build configuration list for PBXNativeTarget "ElQuintoPinoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				54A282BE1AA4D78E0060DA60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
