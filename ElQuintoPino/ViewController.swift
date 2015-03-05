@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
+
+    @IBOutlet weak var speciesPicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    @IBAction func exitFromCurrentView(segue: UIStoryboardSegue) {
+//        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func saveNewBonsai(segue: UIStoryboardSegue) {
+        
+    }
 }
 
