@@ -29,48 +29,58 @@
             <point key="canvasLocation" x="647.5" y="253.5"/>
         </scene>
         <!--Logs-->
-        <scene sceneID="PvP-CC-A5C">
-            <objects>
-                <tableViewController id="Ppg-mZ-QOh" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tnr-1c-KtQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pxr-20-aAh">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pxr-20-aAh" id="9ks-Fd-GCa">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Ppg-mZ-QOh" id="HtV-0F-Tak"/>
-                            <outlet property="delegate" destination="Ppg-mZ-QOh" id="v0m-zV-U7f"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Logs" id="SpH-Pa-H2o"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p1Y-ij-y1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1756" y="-160"/>
-        </scene>
-        <!--Item-->
         <scene sceneID="u0x-D4-4Bv">
             <objects>
                 <navigationController id="Ys3-fV-OiF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="o8a-DL-nF8"/>
+                    <tabBarItem key="tabBarItem" title="Logs" id="o8a-DL-nF8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YBh-g9-0tR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Ppg-mZ-QOh" kind="relationship" relationship="rootViewController" id="Lpe-rv-Uuy"/>
+                        <segue destination="CJv-I0-iei" kind="relationship" relationship="rootViewController" id="UK2-rF-ANP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZ3-Ud-jIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1216" y="-160"/>
+        </scene>
+        <!--Logs-->
+        <scene sceneID="0eY-UW-kEq">
+            <objects>
+                <viewController id="CJv-I0-iei" customClass="VC_LogsTableView" customModule="ElQuintoPino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OzU-MG-fpn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tcY-Lg-tPJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_Log" id="ZuX-e6-MUT">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZuX-e6-MUT" id="8sb-NP-H1t">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CJv-I0-iei" id="cr7-hJ-wJX"/>
+                                    <outlet property="delegate" destination="CJv-I0-iei" id="iWw-tV-GdE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Logs" id="eJf-cG-cF6"/>
+                    <connections>
+                        <outlet property="tableLogsView" destination="tcY-Lg-tPJ" id="y5v-7E-ERi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIT-SQ-aPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5" y="-160.5"/>
         </scene>
         <!--Bonsai-->
         <scene sceneID="Gg1-Sp-mBI">
@@ -102,7 +112,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="l7m-B4-y5a">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="l7m-B4-y5a">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l7m-B4-y5a" id="7Lp-Lu-oTd">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -120,7 +130,7 @@
                     <navigationItem key="navigationItem" title="Bonsais" id="XdP-ds-MrC">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="c2N-eV-C3B">
                             <connections>
-                                <segue destination="nyx-mE-aYu" kind="push" id="G9a-jC-mdT"/>
+                                <segue destination="nyx-mE-aYu" kind="push" identifier="addEdit_view" id="G9a-jC-mdT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -130,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3R-9g-9r4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755.5" y="636.5"/>
+            <point key="canvasLocation" x="1753.5" y="636.5"/>
         </scene>
         <!--New Bonsai-->
         <scene sceneID="s6P-ck-IvI">
@@ -172,7 +182,7 @@
                                 <rect key="frame" x="198" y="73" width="161" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUh-64-Cxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348.5" y="636.5"/>
+            <point key="canvasLocation" x="2336.5" y="636.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

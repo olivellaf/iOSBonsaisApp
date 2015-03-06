@@ -13,6 +13,7 @@ import UIKit
 
 
 
+
 class VC_BonsaiViewController: UIViewController, UITableViewDelegate {
     
     /* Other local class variables */
@@ -21,14 +22,14 @@ class VC_BonsaiViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
     super.viewDidLoad()
-        bonsais = ["Bonsai 1", "Bonsai 2", "Bonsai 3"]
-        
         // Save the user values. The data always keeps even closing the app
         if NSUserDefaults.standardUserDefaults().objectForKey("bonsais") != nil
         {
            bonsais = NSUserDefaults.standardUserDefaults().objectForKey("bonsais") as [String]
+        } else
+        {
+            bonsais = ["Bonsai 1", "Bonsai 2", "Bonsai 3"]
         }
-
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -60,9 +61,14 @@ class VC_BonsaiViewController: UIViewController, UITableViewDelegate {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             bonsais.removeAtIndex(indexPath.row)
             NSUserDefaults.standardUserDefaults().setObject(bonsais, forKey: "bonsais")
+            
+            
+            // Log action
+            logs.append("Bonsai called '\(tableView.cellForRowAtIndexPath(indexPath)!.textLabel!.text!)' has been deleted")
+            NSUserDefaults.standardUserDefaults().setObject(logs, forKey: "logs")
+            
             tableView.reloadData()
         }
-        
     }
     
     
