@@ -10,7 +10,8 @@ import UIKit
 
 class VC_DetailView: UIViewController {
 
-    @IBOutlet weak var tf_name: UITextField!
+    @IBOutlet weak var btn_newSpecie: UIButton!
+    @IBOutlet var allTextFields: [UITextField]!
     
     override func viewDidLoad()
     {
@@ -23,35 +24,52 @@ class VC_DetailView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    @IBAction func btn_done_newBonsai(sender: AnyObject)
-    {
-        var bonsai_name = tf_name.text
-        if bonsai_name != "" && bonsai_name != " " {
-            bonsais.append(bonsai_name)
-            tf_name.text = ""
-            
-            // Log action
-            logs.append("New bonsai added: " + bonsai_name)
-            bonsai_name = ""
-            
-        } else {
-            println("Empty field!")
-        }
-        
-        NSUserDefaults.standardUserDefaults().setObject(bonsais, forKey: "bonsais")
-        NSUserDefaults.standardUserDefaults().setObject(logs, forKey: "logs")
-    }
-    
-    
-    
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
     
+    @IBAction func btn_done_newBonsai(sender: AnyObject)
+    {
+        var newBonsaiVariables: [String] = getBonsaiVarsFrom(allTextFields)
 
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+        if allTextFields[0].text != "" {
+            // Bonsai action
+            addNewBonsai(newBonsaiVariables)
+            
+            // Log action
+            logs.append("New bonsai added: " + newBonsaiVariables[0])
+            
+            cleanAllTextFields()
+        }
+        
+        
+//        NSUserDefaults.standardUserDefaults().setObject(bonsais, forKey: "bonsais")
+        NSUserDefaults.standardUserDefaults().setObject(logs, forKey: "logs")
     }
     
+    @IBAction func newSpecie(sender: AnyObject)
+    {
+        
+    }
+    
+    func addNewBonsai(newBonsaiVariables: [String]) {
+        bonsais.append(CBonsai(newBonsaiVariables: newBonsaiVariables))
+    }
+
+    func getBonsaiVarsFrom(allTextFields: [UITextField])->[String] {
+        var vars_arr = [String]()
+        for field in allTextFields {
+            vars_arr.append(field.text)
+        }
+        return vars_arr
+    }
+    
+    
+    
+    func cleanAllTextFields() {
+        for tf in allTextFields {
+            tf.text = ""
+        }
+    }
 }

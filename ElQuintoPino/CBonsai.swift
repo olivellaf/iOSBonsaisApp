@@ -11,45 +11,56 @@ import Foundation
 import UIKit
 
 class CBonsai {
+    var id: String!
+    var name: String!
+    var specie: String!
+    var style: String!
+    var age: Int!
+    var price: Double!
+    var height: String!
+    var trunkWidth: String!
+
+//    var photos: [String]!
+//    var datePlanted: String!
+//    var source: String!
+//    var dateAcquired: String!
+//    var pot: String!
     
-    private var name:String!
-    private var photos:[UIImage]!
-    private var specie:String!
-    private var style:String?
-    private var datePlanted:String?
-    private var age:Int!
-    private var source:String!
-    private var dateAcquired:String!
-    private var price:Double!
-    private var pot:String!
-    private var height:String!
-    private var trunkWidth:String!
-    
-    init(name:String, photos: [String], specie: String, style:String, datePlanted:String, age:Int, source:String, dateAcquired:String, price:Double, pot:String, height:String, trunkWidth:String) {
+    init(id: String, name: String, specie: String) {
+        self.id = id
         self.name = name
-        self.photos = getAllImages(photos)
         self.specie = specie
-        self.style = style
-        self.datePlanted = datePlanted
-        self.age = age
-        self.source = source
-        self.dateAcquired = dateAcquired
-        self.price = price
-        self.pot = pot
-        self.height = height
-        self.trunkWidth = trunkWidth
     }
     
-    init(name: String, photo: UIImage, specie:String, age:Int, price:Double) {
-//        self(name, 
+    init(newBonsaiVariables: [String]) {
+        self.name = newBonsaiVariables[0]
+        self.specie = newBonsaiVariables[1]
+        self.age = newBonsaiVariables[2].toInt()
+        self.price = parseToDouble(newBonsaiVariables[3])
+        self.height = newBonsaiVariables[4]
+        self.trunkWidth = newBonsaiVariables[5]
+        
+//        self.style = newBonsaiVariables[2]
+//        self.datePlanted = newBonsaiVariables[3]
+//        self.source = newBonsaiVariables[5]
+//        self.dateAcquired = newBonsaiVariables[6]
+//        self.photos = getAllImages(photos)
+//        self.pot = newBonsaiVariables[X]
     }
 
     
-    private func getAllImages(str_images: [String])->[UIImage] {
+    private func getAllImages(str_images: [String])->[UIImage]
+    {
         var allImages:[UIImage]!
         for image in str_images {
             allImages.append(UIImage(named: image)!)
         }
         return allImages
     }
+    
+    private func parseToDouble(value: String)->Double {
+        return (value as NSString).doubleValue
+    }
+    
+    
 }
