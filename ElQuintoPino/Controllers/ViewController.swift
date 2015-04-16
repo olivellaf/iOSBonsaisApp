@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var datePicker: UIDatePicker!
-
     @IBOutlet weak var speciesPicker: UIPickerView!
     
     override func viewDidLoad() {

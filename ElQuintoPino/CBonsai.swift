@@ -19,17 +19,17 @@ class CBonsai {
     var price: Double!
     var height: String!
     var trunkWidth: String!
-
-//    var photos: [String]!
+    var photos: String!
 //    var datePlanted: String!
 //    var source: String!
 //    var dateAcquired: String!
 //    var pot: String!
     
-    init(id: String, name: String, specie: String) {
+    init(id: String, name: String, specie: String, photos: String) {
         self.id = id
         self.name = name
         self.specie = specie
+        self.photos = photos //only one
     }
     
     init(newBonsaiVariables: [String]) {

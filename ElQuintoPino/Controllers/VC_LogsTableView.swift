@@ -19,18 +19,19 @@ class VC_LogsTableView: UIViewController, UITableViewDelegate, UIActionSheetDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         if NSUserDefaults.standardUserDefaults().objectForKey("logs") != nil
         {
             logs = NSUserDefaults.standardUserDefaults().objectForKey("logs") as [String]
         }
+        tableLogsView.reloadData()
     }
     
     override func viewDidAppear(animated: Bool) {
+        if NSUserDefaults.standardUserDefaults().objectForKey("logs") != nil
+        {
+            logs = NSUserDefaults.standardUserDefaults().objectForKey("logs") as [String]
+        }
         tableLogsView.reloadData()
-//        for log in logs {
-//            println(log)
-//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,7 +77,7 @@ class VC_LogsTableView: UIViewController, UITableViewDelegate, UIActionSheetDele
         case 0:
             NSLog("Done");
             logs.removeAll(keepCapacity: false)
-//            NSUserDefaults.standardUserDefaults().setObject(logs, forKey: "logs")
+            NSUserDefaults.standardUserDefaults().setObject(logs, forKey: "logs")
             tableLogsView.reloadData()
             break;
         case 1:

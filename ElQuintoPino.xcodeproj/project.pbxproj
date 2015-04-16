@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540982531ABB1AD500641B77 /* VC_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540982521ABB1AD500641B77 /* VC_CollectionView.swift */; };
+		540982551ABB326600641B77 /* VC_BigPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540982541ABB326600641B77 /* VC_BigPicture.swift */; };
 		543B3F911AA927190009F693 /* VC_BonsaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B3F8E1AA927190009F693 /* VC_BonsaiViewController.swift */; };
 		543B3F921AA927190009F693 /* VC_DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B3F8F1AA927190009F693 /* VC_DetailView.swift */; };
 		543B3F931AA927190009F693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B3F901AA927190009F693 /* ViewController.swift */; };
 		543B3F961AA928240009F693 /* VC_LogsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B3F951AA928240009F693 /* VC_LogsTableView.swift */; };
+		548733571AC45B0000267D89 /* bonsai-icon_peke.png in Resources */ = {isa = PBXBuildFile; fileRef = 548733561AC45B0000267D89 /* bonsai-icon_peke.png */; };
+		548733591AC45D2100267D89 /* VC_NewSpecie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548733581AC45D2100267D89 /* VC_NewSpecie.swift */; };
+		5487335B1AC4663D00267D89 /* bonsai_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 5487335A1AC4663D00267D89 /* bonsai_img.png */; };
 		548A31541AB2152500AF2E72 /* VC_MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A31531AB2152500AF2E72 /* VC_MyCustomCell.swift */; };
 		54A282A01AA4D78E0060DA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A2829F1AA4D78E0060DA60 /* AppDelegate.swift */; };
 		54A282A51AA4D78E0060DA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A282A31AA4D78E0060DA60 /* Main.storyboard */; };
@@ -20,8 +25,8 @@
 		54C579551AAA50DD001BD075 /* CSpecie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C579541AAA50DD001BD075 /* CSpecie.swift */; };
 		54D202091AA6277F005884EC /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D202081AA6277F005884EC /* default.png */; };
 		54D2020B1AA6416C005884EC /* CBonsai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D2020A1AA6416C005884EC /* CBonsai.swift */; };
+		54DA874F1ABC6B4600C324A9 /* VC_ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA874E1ABC6B4600C324A9 /* VC_ImageController.swift */; };
 		54FD92F51AB32C2900E845AE /* BonsaiConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD92F41AB32C2900E845AE /* BonsaiConverter.swift */; };
-		54FD92FC1AB3479F00E845AE /* bonsai-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD92F71AB3479F00E845AE /* bonsai-icon.png */; };
 		54FD92FD1AB3479F00E845AE /* calendar-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD92F81AB3479F00E845AE /* calendar-icon.png */; };
 		54FD92FE1AB3479F00E845AE /* logs-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD92F91AB3479F00E845AE /* logs-icon.png */; };
 		54FD92FF1AB3479F00E845AE /* pots-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD92FA1AB3479F00E845AE /* pots-icon.png */; };
@@ -39,10 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		540982521ABB1AD500641B77 /* VC_CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_CollectionView.swift; sourceTree = "<group>"; };
+		540982541ABB326600641B77 /* VC_BigPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_BigPicture.swift; sourceTree = "<group>"; };
 		543B3F8E1AA927190009F693 /* VC_BonsaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_BonsaiViewController.swift; sourceTree = "<group>"; };
 		543B3F8F1AA927190009F693 /* VC_DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_DetailView.swift; sourceTree = "<group>"; };
 		543B3F901AA927190009F693 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		543B3F951AA928240009F693 /* VC_LogsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_LogsTableView.swift; sourceTree = "<group>"; };
+		548733561AC45B0000267D89 /* bonsai-icon_peke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bonsai-icon_peke.png"; sourceTree = "<group>"; };
+		548733581AC45D2100267D89 /* VC_NewSpecie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_NewSpecie.swift; sourceTree = "<group>"; };
+		5487335A1AC4663D00267D89 /* bonsai_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bonsai_img.png; sourceTree = "<group>"; };
 		548A31531AB2152500AF2E72 /* VC_MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_MyCustomCell.swift; sourceTree = "<group>"; };
 		54A2829A1AA4D78E0060DA60 /* ElQuintoPino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElQuintoPino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A2829E1AA4D78E0060DA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,8 +66,8 @@
 		54C579541AAA50DD001BD075 /* CSpecie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSpecie.swift; sourceTree = "<group>"; };
 		54D202081AA6277F005884EC /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		54D2020A1AA6416C005884EC /* CBonsai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBonsai.swift; path = ../CBonsai.swift; sourceTree = "<group>"; };
+		54DA874E1ABC6B4600C324A9 /* VC_ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_ImageController.swift; sourceTree = "<group>"; };
 		54FD92F41AB32C2900E845AE /* BonsaiConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonsaiConverter.swift; sourceTree = "<group>"; };
-		54FD92F71AB3479F00E845AE /* bonsai-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bonsai-icon.png"; sourceTree = "<group>"; };
 		54FD92F81AB3479F00E845AE /* calendar-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-icon.png"; sourceTree = "<group>"; };
 		54FD92F91AB3479F00E845AE /* logs-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logs-icon.png"; sourceTree = "<group>"; };
 		54FD92FA1AB3479F00E845AE /* pots-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pots-icon.png"; sourceTree = "<group>"; };
@@ -88,7 +98,11 @@
 				543B3F951AA928240009F693 /* VC_LogsTableView.swift */,
 				543B3F8E1AA927190009F693 /* VC_BonsaiViewController.swift */,
 				543B3F8F1AA927190009F693 /* VC_DetailView.swift */,
+				548733581AC45D2100267D89 /* VC_NewSpecie.swift */,
+				540982521ABB1AD500641B77 /* VC_CollectionView.swift */,
 				548A31531AB2152500AF2E72 /* VC_MyCustomCell.swift */,
+				540982541ABB326600641B77 /* VC_BigPicture.swift */,
+				54DA874E1ABC6B4600C324A9 /* VC_ImageController.swift */,
 				543B3F901AA927190009F693 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -166,7 +180,8 @@
 		54FD92F61AB3479F00E845AE /* images_5pino */ = {
 			isa = PBXGroup;
 			children = (
-				54FD92F71AB3479F00E845AE /* bonsai-icon.png */,
+				5487335A1AC4663D00267D89 /* bonsai_img.png */,
+				548733561AC45B0000267D89 /* bonsai-icon_peke.png */,
 				54FD92F81AB3479F00E845AE /* calendar-icon.png */,
 				54FD92F91AB3479F00E845AE /* logs-icon.png */,
 				54FD92FA1AB3479F00E845AE /* pots-icon.png */,
@@ -258,10 +273,11 @@
 				54A282A51AA4D78E0060DA60 /* Main.storyboard in Resources */,
 				54FD93001AB3479F00E845AE /* statistics-icon.png in Resources */,
 				54FD92FE1AB3479F00E845AE /* logs-icon.png in Resources */,
-				54FD92FC1AB3479F00E845AE /* bonsai-icon.png in Resources */,
 				54A282AA1AA4D78E0060DA60 /* LaunchScreen.xib in Resources */,
+				548733571AC45B0000267D89 /* bonsai-icon_peke.png in Resources */,
 				54FD92FF1AB3479F00E845AE /* pots-icon.png in Resources */,
 				54A282A71AA4D78E0060DA60 /* Images.xcassets in Resources */,
+				5487335B1AC4663D00267D89 /* bonsai_img.png in Resources */,
 				54FD92FD1AB3479F00E845AE /* calendar-icon.png in Resources */,
 				54D202091AA6277F005884EC /* default.png in Resources */,
 			);
@@ -281,14 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540982551ABB326600641B77 /* VC_BigPicture.swift in Sources */,
 				543B3F921AA927190009F693 /* VC_DetailView.swift in Sources */,
 				548A31541AB2152500AF2E72 /* VC_MyCustomCell.swift in Sources */,
 				54C579551AAA50DD001BD075 /* CSpecie.swift in Sources */,
+				540982531ABB1AD500641B77 /* VC_CollectionView.swift in Sources */,
 				54FD92F51AB32C2900E845AE /* BonsaiConverter.swift in Sources */,
 				54D2020B1AA6416C005884EC /* CBonsai.swift in Sources */,
 				54A282A01AA4D78E0060DA60 /* AppDelegate.swift in Sources */,
 				543B3F961AA928240009F693 /* VC_LogsTableView.swift in Sources */,
 				543B3F931AA927190009F693 /* ViewController.swift in Sources */,
+				54DA874F1ABC6B4600C324A9 /* VC_ImageController.swift in Sources */,
+				548733591AC45D2100267D89 /* VC_NewSpecie.swift in Sources */,
 				543B3F911AA927190009F693 /* VC_BonsaiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
