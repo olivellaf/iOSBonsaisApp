@@ -40,7 +40,8 @@ class VC_DetailView: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         // Dispose of any resources that can be recreated.
     }
 
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
     
@@ -149,11 +150,11 @@ class VC_DetailView: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         {
             (response, data, error) in
             
-            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
+            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
             
             // 4
-            let successID: Int! = jsonResult["success"] as Int
-            let message: String! = jsonResult["message"] as String
+            let successID: Int! = jsonResult["success"] as! Int
+            let message: String! = jsonResult["message"] as! String
             println("\(successID), \(message)")
             
             if let HTTPResponse = response as? NSHTTPURLResponse {
